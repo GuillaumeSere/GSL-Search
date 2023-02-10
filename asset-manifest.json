@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GSL-Search/static/css/main.585ae666.chunk.css",
+    "main.js": "/GSL-Search/static/js/main.1db3491e.chunk.js",
+    "main.js.map": "/GSL-Search/static/js/main.1db3491e.chunk.js.map",
+    "runtime-main.js": "/GSL-Search/static/js/runtime-main.e342137e.js",
+    "runtime-main.js.map": "/GSL-Search/static/js/runtime-main.e342137e.js.map",
+    "static/js/2.b97fd9a8.chunk.js": "/GSL-Search/static/js/2.b97fd9a8.chunk.js",
+    "static/js/2.b97fd9a8.chunk.js.map": "/GSL-Search/static/js/2.b97fd9a8.chunk.js.map",
+    "index.html": "/GSL-Search/index.html",
+    "precache-manifest.ee2cef7a6b6bb128d5969de3128b5d56.js": "/GSL-Search/precache-manifest.ee2cef7a6b6bb128d5969de3128b5d56.js",
+    "service-worker.js": "/GSL-Search/service-worker.js",
+    "static/css/main.585ae666.chunk.css.map": "/GSL-Search/static/css/main.585ae666.chunk.css.map",
+    "static/js/2.b97fd9a8.chunk.js.LICENSE.txt": "/GSL-Search/static/js/2.b97fd9a8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e342137e.js",
+    "static/js/2.b97fd9a8.chunk.js",
+    "static/css/main.585ae666.chunk.css",
+    "static/js/main.1db3491e.chunk.js"
+  ]
+}
