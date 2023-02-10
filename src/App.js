@@ -6,7 +6,7 @@ import Search from "./components/Search";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/search" exact component={Search} />
