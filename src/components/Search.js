@@ -3,6 +3,7 @@ import { FaSistrix, FaMicrophone } from "react-icons/fa";
 import axios from "axios";
 import Show from "./Show";
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
+import logo from '../images/logo2.png';
 
 const Search = (props) => {
 
@@ -81,7 +82,7 @@ const Search = (props) => {
             />
             <div className="search__form">
                 <div className="search__form-logo">
-                    <img src="/images/logo2.png" alt="logo" onClick={goBack} />
+                    <img src={logo} alt="logo" onClick={goBack} />
                 </div>
                 <div className="search__form-input">
                     <form className="home__form" onSubmit={searchGoogle}>

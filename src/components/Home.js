@@ -1,6 +1,7 @@
 import React from "react";
 import { FaSistrix, FaMicrophone } from "react-icons/fa";
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
+import logo from '../images/logo2.png';
 
 const Home = (props) => {
 
@@ -40,7 +41,7 @@ const Home = (props) => {
             />
             <div className="home__container">
                 <div className="home__logo">
-                    <img src="/images/logo2.png" alt="Logo" className="logo2" />
+                    <img src={logo} alt="Logo" className="logo2" />
                     <h1>GSL</h1>
                 </div>
                 <form className="home__form" onSubmit={searchGoogle}>
