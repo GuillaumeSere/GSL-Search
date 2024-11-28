@@ -38,6 +38,7 @@ const Home = (props) => {
                 onChange={handleChangeTheme}
                 isDarkMode={isDarkMode}
                 className="dark"
+                size="25"
             />
             <div className="home__container">
                 <div className="home__logo">
