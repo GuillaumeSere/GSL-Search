@@ -10,13 +10,18 @@ const Show = (props) => {
         {info ? `Total results: ${info.totalResults}` : ""}
       </div>
       {results.length > 0
-        ? results.map((result, id) => (
+        ? results.slice(0, 10).map((result, id) => (
             <div className="show__details" key={id}>
+              {result.pagemap ? result.pagemap.cse_image ? (
+                <div className="show__image">
+                  <img src={result.pagemap.cse_image[0].src} alt="Image" />
+                </div>
+              ) : "" : ""}
               <div className="show__link">
-                <a href={result.displayLink}>{result.displayLink}</a>
+                <a href={result.displayLink} target="_blank" rel="noopener noreferrer">{result.displayLink}</a>
               </div>
               <div className="show__title">
-                <a href={result.link}>{result.title}</a>
+                <a href={result.link} target="_blank" rel="noopener noreferrer">{result.title}</a>
               </div>
               <div className="show__description">
                 <p>{result.snippet}</p>

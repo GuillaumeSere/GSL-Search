@@ -155,3 +155,6 @@ body[data-theme=dark] {
 .show__description {
   font-size: 14px;
 }
+.show__image img{
+    width: 60px;
+}
