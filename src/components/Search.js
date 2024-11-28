@@ -79,6 +79,7 @@ const Search = (props) => {
                 onChange={handleChangeTheme}
                 isDarkMode={isDarkMode}
                 className="dark"
+                size="25"
             />
             <div className="search__form">
                 <div className="search__form-logo">

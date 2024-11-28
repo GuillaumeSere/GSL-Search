@@ -114,8 +114,8 @@ body[data-theme=dark] {
   padding-bottom: 20px;
 }
 .search__form-logo {
-  width: 92px;
-  height: 92px;
+  max-width: 92px;
+  max-height: 92px;
   cursor: pointer;
 }
 .search__form-logo img {
@@ -128,7 +128,7 @@ body[data-theme=dark] {
 }
 .show {
   margin: 20px 0;
-  width: 700px;
+  max-width: 700px;
 }
 .show__info {
   color: silver;
