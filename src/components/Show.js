@@ -10,7 +10,7 @@ const Show = (props) => {
         {info ? `Total results: ${info.totalResults}` : ""}
       </div>
       {results.length > 0
-        ? results.slice(0, 10).map((result, id) => (
+        ? results.map((result, id) => (
             <div className="show__details" key={id}>
               {result.pagemap ? result.pagemap.cse_image ? (
                 <div className="show__image">

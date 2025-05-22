@@ -46,6 +46,7 @@ const Search = (props) => {
                 `https://www.googleapis.com/customsearch/v1?key=${process.env.REACT_APP_API_KEY}&cx=${process.env.REACT_APP_CX_KEY}&q=${state}`
             );
             if (response) {
+                console.log(response)
                 setResults(response.data.items);
                 setInfo(response.data.searchInformation);
             }
