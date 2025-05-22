@@ -1,10 +1,11 @@
 import React from "react";
 import { FaSistrix, FaMicrophone } from "react-icons/fa";
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
+import { useNavigate } from "react-router-dom";
 import logo from '../images/logo2.png';
 
-const Home = (props) => {
-
+const Home = () => {
+    const navigate = useNavigate();
     const [state, setState] = React.useState("");
 
     const [isDarkMode, setIsDarkMode] = React.useState(localStorage.getItem('data-theme') === 'dark' ? true : false)
@@ -29,7 +30,8 @@ const Home = (props) => {
     }
 
     const searchGoogle = (e) => {
-        props.history.push({ pathname: "/search", state });
+        e.preventDefault();
+        navigate("/search", { state: state });
     };
 
     return (

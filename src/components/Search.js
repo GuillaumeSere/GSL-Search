@@ -3,10 +3,12 @@ import { FaSistrix, FaMicrophone } from "react-icons/fa";
 import axios from "axios";
 import Show from "./Show";
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
+import { useLocation, useNavigate } from "react-router-dom";
 import logo from '../images/logo2.png';
 
-const Search = (props) => {
-
+const Search = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
     const [isDarkMode, setIsDarkMode] = React.useState(localStorage.getItem('data-theme') === 'dark' ? true : false)
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
@@ -29,11 +31,11 @@ const Search = (props) => {
     }
 
     const goBack = () => {
-        props.history.push("/");
+        navigate("/");
     };
 
     const [state, setState] = React.useState(
-        props.location.state ? props.location.state : ""
+        location.state ? location.state : ""
     );
 
     const [results, setResults] = React.useState([]);
@@ -57,7 +59,7 @@ const Search = (props) => {
 
     React.useEffect(() => {
         async function getPosts() {
-            if (props.location.state) {
+            if (location.state) {
                 try {
                     const response = await axios.get(
                         `https://www.googleapis.com/customsearch/v1?key=${process.env.REACT_APP_API_KEY}&cx=${process.env.REACT_APP_CX_KEY}&q=${state}`
