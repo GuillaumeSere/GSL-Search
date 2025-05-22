@@ -8,8 +8,8 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/search" exact element={<Search />} />
       </Routes>
     </Router>
   );
